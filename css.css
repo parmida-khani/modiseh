@@ -1,0 +1,518 @@
+@font-face {
+    font-family: IRANSans;
+    src: url(IRANSans.ttf);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    font-family: IRANSans;
+    box-sizing: border-box;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+.h-n {
+    background-image: url("test.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    /*background-color: #303331;*/
+    margin-bottom: 0px;
+}
+
+h1 {
+    width: 300px;
+    color: #ffc31f;
+    border-bottom: 2px solid #ffc31f;
+    text-align: center;
+    padding: 130px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 15px;
+    font-family: 'Lemonada', cursive;
+    animation-name: head;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    margin-bottom: 0px;
+
+}
+
+@keyframes head {
+    from {
+        letter-spacing: 15px;
+    }
+    to {
+        letter-spacing: 0px;
+    }
+}
+
+
+/*for navigation*/
+.myNav {
+    margin-top: 0px;
+}
+
+.nav1 a {
+    color: lightgray;
+    margin-left: 15px;
+    font-size: 0.9em;
+}
+
+.nav1 a:hover {
+    color: #303331;
+    font-weight: bold;
+}
+
+.active {
+    color: #ffc31f;
+    margin-right: 0px;
+    margin-left: 15px;
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+
+
+}
+
+.active:hover {
+    color: #ffc31f;
+    text-decoration: none;
+}
+
+.signup {
+    color: black;
+    background-color: #ffc31f;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 10px 10px;
+}
+
+.signup:hover {
+    background-color: #edad00;
+    color: black;
+}
+
+.search {
+    color: white;
+    background-color: lightgray;
+    border: none;
+    background-image: url(search.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+.search:hover {
+    background-color: lightgray;
+    border: none;
+    color: black;
+}
+
+.search:focus {
+    background-color: lightgray;
+    border: none;
+}
+
+.drop-img {
+    width: 300px;
+}
+
+
+/*for menu*/
+.menu {
+    padding: 50px 0px 0px 0px;
+    float: left;
+    background-color: #f5f5f5;
+
+}
+
+.menu h5 {
+    text-align: right;
+    padding: 20px 10px;
+    color: #616161;
+}
+
+.menu * {
+    text-align: right;
+}
+
+.menu card {
+    background-color: #f5f5f5;
+}
+
+.menu button {
+    color: gray;
+    text-decoration: none;
+}
+
+.menu button:hover {
+    color: #303331;
+    border-right: 5px solid #ffc31f;
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu .card a {
+    text-decoration: none;
+    color: gray;
+}
+
+.menu .card a:hover {
+    color: #303331;
+    border-bottom: 2px solid #ffc31f;
+    text-decoration: none;
+
+}
+
+a.vizhe {
+    color: red;
+    padding: 25px 20px 0px 0px;
+    display: block;
+
+}
+
+a.jadid {
+    padding: 25px 20px 0px 0px;
+    color: #616161;
+    display: block;
+}
+
+.menu a.total {
+    color: #fab700;
+}
+
+
+/*for body*/
+.slider {
+    margin-right: 30px;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+.vizheBox, .jadidBox {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.vizheBox h4 {
+    display: inline-block;
+    color: red;
+    padding: 20px;
+}
+
+.vizheBox .card {
+    display: inline-block;
+
+}
+
+.vizheBox .kharid, .jadidBox .kharid {
+    background-color: #ffc31f;
+    color: black;
+    border: none;
+    margin-right: 15px;
+    padding: 8px 30px;
+    font-weight: bold;
+}
+
+.vizheBox .kharid:hover, .jadidBox .kharid:hover {
+    background-color: #edad00;
+    color: black;
+
+}
+
+.vizheBox select, .jadidBox select {
+    border-color: #edad00;
+}
+
+.vizheBox img {
+    transition: all 1s;
+}
+
+.vizheBox img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.vizheBox .moshahede {
+    background: none;
+    padding: 7px 15px;
+    color: #303331;
+    border-color: #303331;
+    border-radius: 5px;
+}
+
+.vizheBox .moshahede:hover {
+    border-color: #ffc31f;
+    font-weight: bold;
+}
+
+.jadidBox > h5 {
+    color: #303331;
+    border-bottom: 2px solid #303331;
+    padding: 20px;
+
+}
+
+.jadidBox .scroll {
+    max-height: 465px;
+    overflow: auto;
+}
+
+.jadidBox img:hover {
+    filter: brightness(70%);
+}
+
+.jadidBox .card {
+    margin: auto;
+}
+
+.jadidBox .more {
+    background-image: url("expand.png");
+    background-repeat: no-repeat;
+    background-position: 12px 14px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-right: 47%;
+    margin-top: 30px;
+    background-color: #ffc31f;
+}
+
+.jadidBox .more:hover {
+    background-color: #edad00;
+}
+
+.brand {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.brand h4 {
+    text-align: center;
+    color: #303331;
+    border-bottom: 2px solid #303331;
+    padding: 20px;
+}
+
+.brand img {
+    opacity: 0.5;
+}
+
+.brand img:hover {
+    opacity: 1;
+}
+
+
+/*bara footer*/
+footer {
+    clear: both;
+    background-image: url("footer.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: right;
+}
+
+footer form {
+    margin-top: 40px;
+}
+
+footer table td {
+    padding-bottom: 15px;
+}
+
+footer table input, footer table textarea {
+    background: none;
+    border: 2px solid black;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+footer table textarea {
+    height: 100px;
+}
+
+footer form button {
+    background-color: #303331;
+    border: 2px solid #ffc31f;
+    color: #ffc31f;
+    border-radius: 40px;
+    padding: 10px 30px;
+    transition: all 1s;
+}
+
+footer form button:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    color: lightgray;
+    margin-top: 70px;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+
+}
+
+footer .btn {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 9px 9px;
+    border-radius: 100px;
+    transition: width 1s;
+    margin-right: 34%;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px black;
+}
+
+footer .btn:first-child {
+    background-image: url('001-instagram.png');
+}
+
+footer .btn:nth-child(2) {
+    background-image: url('002-telegram.png');
+    margin-right: 50px;
+}
+
+footer .btn:last-child {
+    background-image: url('003-gmail.png');
+    margin-right: 50px;
+
+}
+
+h5 {
+    padding-top: 7px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+footer .btn:first-child:hover {
+    width: 160px;
+}
+
+footer .btn:nth-child(2):hover {
+    width: 220px;
+}
+
+footer .btn:last-child:hover {
+    width: 250px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .slider {
+        height: 150px;
+    }
+
+    .slider img {
+        height: 150px;
+    }
+
+    .menu * {
+        font-size: 0.9em;
+        padding-right: 3px;
+        padding-left: 3px;
+
+    }
+
+    .signup, .search {
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    footer .btn {
+        margin-right: 4%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    footer table, footer form h5, footer form button {
+        margin-right: 30%;
+    }
+
+    footer form h5, footer td {
+        color: lightgray;
+        text-shadow: 0px 0px 5px black;
+    }
+
+}
